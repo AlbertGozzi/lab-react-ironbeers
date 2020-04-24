@@ -1,25 +1,82 @@
 .App {
+  margin: auto;
+  max-width: 80%;
+
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#header {
+  background: #007bff;
+  height: 2em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+#header > * { 
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+#Home img { 
+  padding: 1em 0px;
+  width: 100%;
 }
 
-.App-intro {
-  font-size: large;
+.searchBar {
+  margin-top: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.beer {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  padding: 1em 0;
+}
+
+.beerImage {
+  height: 9em;
+  justify-self: center;
+}
+
+.beerDescription {
+  text-align: left;
+  padding-left: 2em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.beerDescription li {
+  text-decoration-line: none;
+}
+
+.singleBeer > * {
+  padding-top: 1em;
+  padding-left: 0em;
+}
+
+.form {
+  padding: 0.5em 1em;
+  margin: 0.5em 0 0.5em 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.form > * {
+  margin: 0.5em 0;
+}
+
+.form input {
+  padding: 0 0.3em;
+}
+
+.form #submit {
+  margin: 0.5em 20%;
+  grid-column: 1/-1;
 }
 
 @keyframes App-logo-spin {
